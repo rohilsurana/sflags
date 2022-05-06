@@ -4,7 +4,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/alecthomas/kingpin"
-	"github.com/octago/sflags"
+	"github.com/rohilsurana/sflags"
 )
 
 type flagger interface {

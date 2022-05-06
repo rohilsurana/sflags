@@ -10,7 +10,7 @@ import (
 	"os"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/octago/sflags/gen/gflag"
+	"github.com/rohilsurana/sflags/gen/gflag"
 )
 
 type httpConfig struct {

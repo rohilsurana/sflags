@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/octago/sflags"
+	"github.com/rohilsurana/sflags"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -1,4 +1,6 @@
-# Flags based on structures. [![GoDoc](https://godoc.org/github.com/octago/sflags?status.svg)](http://godoc.org/github.com/octago/sflags) [![Build Status](https://travis-ci.org/octago/sflags.svg?branch=master)](https://travis-ci.org/octago/sflags)  [![codecov](https://codecov.io/gh/octago/sflags/branch/master/graph/badge.svg)](https://codecov.io/gh/octago/sflags)  [![Go Report Card](https://goreportcard.com/badge/github.com/octago/sflags)](https://goreportcard.com/report/github.com/octago/sflags)
+Forked from [https://github.com/octago/sflags](https://github.com/octago/sflags)
+
+# Flags based on structures. [![GoDoc](https://godoc.org/github.com/rohilsurana/sflags?status.svg)](http://godoc.org/github.com/rohilsurana/sflags) [![Build Status](https://travis-ci.org/rohilsurana/sflags.svg?branch=master)](https://travis-ci.org/rohilsurana/sflags)  [![codecov](https://codecov.io/gh/rohilsurana/sflags/branch/master/graph/badge.svg)](https://codecov.io/gh/rohilsurana/sflags)  [![Go Report Card](https://goreportcard.com/badge/github.com/rohilsurana/sflags)](https://goreportcard.com/report/github.com/rohilsurana/sflags)
 
 The sflags package uses structs, reflection and struct field tags
 to allow you specify command line options. It supports [different types](#supported-types-in-structures) and [features](#features).
@@ -23,12 +25,12 @@ And you can use your favorite flag or cli library!
 
 ## Supported flags and cli libraries:
 
- - [x] [flag](https://golang.org/pkg/flag/) - [example](https://github.com/octago/sflags/blob/master/examples/flag/main.go)
- - [x] [spf13/pflag](https://github.com/spf13/pflag) - [example](https://github.com/octago/sflags/blob/master/examples/pflag/main.go)
- - [x] [spf13/cobra](https://github.com/spf13/cobra) - [example](https://github.com/octago/sflags/blob/master/examples/cobra/main.go)
+ - [x] [flag](https://golang.org/pkg/flag/) - [example](https://github.com/rohilsurana/sflags/blob/master/examples/flag/main.go)
+ - [x] [spf13/pflag](https://github.com/spf13/pflag) - [example](https://github.com/rohilsurana/sflags/blob/master/examples/pflag/main.go)
+ - [x] [spf13/cobra](https://github.com/spf13/cobra) - [example](https://github.com/rohilsurana/sflags/blob/master/examples/cobra/main.go)
  - [ ] [spf13/viper](https://github.com/spf13/viper)
- - [x] [urfave/cli](https://github.com/urfave/cli) [example](https://github.com/octago/sflags/blob/master/examples/urfave_cli/main.go)
- - [x] [kingpin](https://github.com/alecthomas/kingpin) [example](https://github.com/octago/sflags/blob/master/examples/kingpin/main.go)
+ - [x] [urfave/cli](https://github.com/urfave/cli) [example](https://github.com/rohilsurana/sflags/blob/master/examples/urfave_cli/main.go)
+ - [x] [kingpin](https://github.com/alecthomas/kingpin) [example](https://github.com/rohilsurana/sflags/blob/master/examples/kingpin/main.go)
 
 ## Features:
 
@@ -41,7 +43,7 @@ And you can use your favorite flag or cli library!
  - [x] Deprecated and hidden options
  - [ ] Multiple ENV names
  - [x] Interface for user types.
- - [x] [Validation](https://godoc.org/github.com/octago/sflags/validator/govalidator#New) (using [govalidator](https://github.com/asaskevich/govalidator) package)
+ - [x] [Validation](https://godoc.org/github.com/rohilsurana/sflags/validator/govalidator#New) (using [govalidator](https://github.com/asaskevich/govalidator) package)
  - [x] Anonymous nested structure support (anonymous structures flatten by default)
 
 ## Supported types in structures:
@@ -99,7 +101,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/octago/sflags/gen/gflag"
+	"github.com/rohilsurana/sflags/gen/gflag"
 )
 
 type httpConfig struct {
@@ -145,7 +147,7 @@ Usage of _obj/exe/main:
 exit status 2
 ```
 
-Look at the other [examples](https://github.com/octago/sflags/blob/master/examples) for different flag libraries.
+Look at the other [examples](https://github.com/rohilsurana/sflags/blob/master/examples) for different flag libraries.
 
 ## Options for flag tag
 
