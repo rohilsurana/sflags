@@ -5,9 +5,7 @@ env:
   - GO111MODULE=on
 
 go:
-  - 1.10.x
-  - 1.11.x
-  - tip
+  - 1.18.x
 
 before_install:
   - go get -t -v ./...
